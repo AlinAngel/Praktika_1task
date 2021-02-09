@@ -1,148 +1,202 @@
 body {
-    /* background-color: lightsalmon; */
-    /* width: 100%; */
+    margin: 0;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background: #EEEFF1;
 }
 
 p {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
 }
 
 h2 {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
-
     color: #000000;
 }
 
+h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
 /* Часть 1 */
-.first_screen {
-    position: absolute;
+
+.container {
     width: 100%;
-    width: 1920px;
-    height: 700px;
-    left: 0px;
-    top: -7px;
-    
-    background: #EEEFF1;
+    height: 100%;
+    max-width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-/* WD */
-.WD {
-position: absolute;
-width: 96px;
-height: 60px;
-left: 402px;
-top: 50px;
+/* Блок навигации */
 
-font-family: Revalia;
-font-style: normal;
-font-weight: normal;
-font-size: 48px;
-line-height: 60px;
-
-text-align: center;
-
-color: #34547A;
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 57px;
 }
 
-ul.fs_menu {
+ul.menu-bar {
     list-style: none;
     margin: 0px;
-    padding: 0px;
-
-    font-family: Roboto;
-    font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.1em;
+}
 
-    position: absolute;
-    left: 896px;
-    top: 72px;
- }
-
-ul.fs_menu li {
+ul.menu-bar li {
     display: inline;
+    white-space: nowrap;
     margin-right: 42px;
     color: #000000;
 }
 
-ul.fs_menu li span{
+ul.menu-bar li:hover {
     font-weight: 500;
     color: #34547A;
+    cursor: pointer;
+}
+
+ul.menu-bar li:last-child {
+    margin: 0;
+}
+
+/* Блок контента */
+
+.image {
+    width: 357px;
+    height: 233.7px;
+}
+
+.header-content {
+    margin: 157px 65px 146px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-text {
+    margin-left: 143px;
 }
 
 /* Дизайн и верстка */
-.desing_style {
-    position: absolute;
-    width: 541px;
-    height: 45px;
-    left: 974px;
-    top: 250px;
-    
-    font-family: Roboto;
-    font-style: normal;
+
+.title_style {
+    margin-top: -42px;
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
-    
     color: #000000;
 }
-/* Текст */
-.text_style {
-    position: absolute;
-    /* margin-bottom: 60px; */
-    width: 540px;
-    height: 67px;
-    left: 975px;
-    top: 355px;
 
+/* Текст */
+
+.text_style {
+    margin: 60px 0px;
     color: #727272;
 }
 
-.image {
-    position: absolute;
-    width: 357px;
-    height: 233.7px;
-    left: 487px;
-    top: 271px;
+/* Кнопка */
+
+.btn {
+    border: 0;
+    width: 225px;
+    height: 65px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    background: #34547A;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background: #065090;
 }
 
 /* Часть 2. Обо мне*/
+
 /* Обо мне */
+
+.about_me {
+    margin: 119px 0px;
+    text-align: -webkit-center;
+}
+
 .about_me_title {
-    position: absolute;
     width: 403px;
     height: 30px;
     left: 758px;
     top: 812px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
 }
 
 /* Текст */
+
 .about_me_text {
-    position: absolute;
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     height: 67px;
     left: 690px;
     top: 892px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
 }
 
 /* Часть 3. Проекты */
+
 .projects {
     position: absolute;
     width: 1920px;
     height: 250px;
     left: 0px;
     top: 1059px;
-
     background: #34547A;
+}
+
+.pr_text {
+    position: absolute;
+    width: 36px;
+    height: 19px;
+    left: 475px;
+    top: 1162px;
+    color: #FFFFFF;
+}
+
+.pr_text2 {
+    position: absolute;
+    width: 71px;
+    height: 15px;
+    left: 475px;
+    top: 1191px;
+}
+
+.image2 {
+    height: 50px;
 }

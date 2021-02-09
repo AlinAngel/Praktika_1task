@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Task 1</title>
-    <!-- <link rel="shortcut icon" href="https://atom.io/favicon.ico"/> -->
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <header>
-    <!-- Часть 1 -->
-      <section class="first_screen"> 
-      <!-- Шапка сайта -->
-      <p class="WD">WD</p>
-      <ul class="fs_menu">
-        <li><span>ГЛАВНАЯ</span></li>
-        <li>ОБ АВТОРЕ</li>
-        <li>РАБОТЫ</li>
-        <li>ПРОЦЕСС</li>
-        <li>КОНТАКТЫ</li>
-      </ul>
-      <!--Заголовок-->
-      <p class="desing_style">Дизайн и верстка</p>
-      <!-- Текст -->
-      <p class="text_style">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
-        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        
-      <img class="image" src="img/laptop.png">
-    </section>
-    <!-- Часть 2  -->
-    <section class="about_me">
+
+<head>
+  <meta charset="utf-8">
+  <title>Task 1</title>
+  <!-- <link rel="shortcut icon" href="https://atom.io/favicon.ico"/> -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Part 1. Header-->
+  <header>
+    <div class="container">
+      <nav class="navigation">
+        <img src="img/WD.svg">
+        <ul class="menu-bar">
+          <li>ГЛАВНАЯ</li>
+          <li>ОБ АВТОРЕ</li>
+          <li>РАБОТЫ</li>
+          <li>ПРОЦЕСС</li>
+          <li>КОНТАКТЫ</li>
+        </ul>
+      </nav>
+
+      <div class="header-content">
+        <img class="image" src="img/laptop.svg">
+        <div class="header-text">
+          <!--Заголовок-->
+          <p class="title_style">Дизайн и верстка</p>
+          <!-- Текст -->
+          <p class="text_style">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+          <!-- Кнопка -->
+          <button class="btn">Написать мне</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Part 2. About me -->
+  <section class="about_me">
       <h2 class="about_me_title">Обо мне</h2>
-      <p class="about_me_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
+      <p class="about_me_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
-    </section>
+  </section>
 
-    <section class="projects">
+  <!-- Part 3. Projects  -->
+  <!-- <section class="projects">
+    <div><img class="image2" src="img/project.png">
+      <div>
+        <h3 class="pr_text">40+</h3>
+        <p class="pr_text2">проектов</p>
+      </div>
+    </div>
+    <div>
+      <p class="pr_text"></p>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section> -->
+</body>
 
-    </section>
-    </header>
-  </body>
 </html>
