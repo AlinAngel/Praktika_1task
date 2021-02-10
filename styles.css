@@ -12,20 +12,22 @@ header {
 }
 
 p {
+    margin: 0px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
 }
 
 h2 {
+    margin: 0;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
-    text-align: center;
     color: #000000;
 }
 
 h3 {
+    margin: 0;
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
@@ -79,7 +81,7 @@ ul.menu-bar li:last-child {
 
 /* Блок контента */
 
-.image {
+.img-laptop {
     width: 357px;
     height: 233.7px;
 }
@@ -126,10 +128,20 @@ ul.menu-bar li:last-child {
     color: #FFFFFF;
     background: #34547A;
     cursor: pointer;
-
+    border-radius: 0;
+    outline: none;
+    text-transform: uppercase;
 }
 
 .btn:hover {
+    background: #065090;
+}
+
+.btn:focus {
+    background: #065090;
+}
+
+.btn:active {
     background: #065090;
 }
 
@@ -145,12 +157,11 @@ ul.menu-bar li:last-child {
 .about_me_title {
     width: 403px;
     height: 30px;
-    left: 758px;
-    top: 812px;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
+    margin-bottom: 50px;
     color: #000000;
 }
 
@@ -160,8 +171,6 @@ ul.menu-bar li:last-child {
     max-width: 540px;
     width: 100%;
     height: 67px;
-    left: 690px;
-    top: 892px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -171,32 +180,223 @@ ul.menu-bar li:last-child {
 
 /* Часть 3. Проекты */
 
-.projects {
-    position: absolute;
-    width: 1920px;
-    height: 250px;
-    left: 0px;
-    top: 1059px;
+.numbers .container {
+    width: 100%;
+    display: flex;
+}
+
+.numbers {
     background: #34547A;
 }
 
-.pr_text {
-    position: absolute;
-    width: 36px;
-    height: 19px;
-    left: 475px;
-    top: 1162px;
+.num_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0;
+}
+
+.num-txt-content {
+    max-width: 80px;
+    width: 100%;
+    text-align: initial;
+    align-items: center;
+    padding-top: 10px;
+    margin-right: 52px;
+    margin-left: 20px;
     color: #FFFFFF;
 }
 
-.pr_text2 {
-    position: absolute;
-    width: 71px;
-    height: 15px;
-    left: 475px;
-    top: 1191px;
+.num-txt-content:last-child {
+    margin-right: 0;
 }
 
-.image2 {
+.num-text {
+    margin: 0;
+}
+
+.img-project {
     height: 50px;
+}
+
+/* Часть 4. Навыки */
+
+.skills .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-top: 102px;
+    margin-bottom: 102px;
+}
+
+.skills-text {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    margin-right: 150px;
+}
+
+ul.skills-list {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-top: 50px;
+}
+
+ul.skills-list li {
+    display: inherit;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    color: #727272;
+}
+
+ul.skills-list li:last-child {
+    margin: 0;
+}
+
+.img-photo {
+    max-width: 555px;
+    width: 100%;
+}
+
+/* Часть 5. Видео */
+
+.video .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    background: #EEEFF1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 54px;
+    color: #727272;
+}
+
+.video-title {
+    margin-bottom: 50px;
+}
+
+.img-video {
+    max-width: 1110px;
+    width: 100%;
+}
+
+/* Часть 6. Проекты */
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 28px 0px;
+}
+
+.projects-content-item {
+    width: 25%;
+    display: inline-flex;
+}
+
+.projects-content-item img {
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+    .projects-content-item {
+        width: 50%;
+    }
+}
+
+/* Часть 7. Форма */
+
+.form {
+    padding: 119px 0px;
+    text-align: -webkit-center;
+    background: #EEEFF1;
+}
+
+.form-title {
+    width: 403px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.form-text {
+    max-width: 540px;
+    width: 100%;
+    height: 67px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+.contact-form {
+    margin-top: 65px;
+    display: grid;
+    max-width: 540px;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-areas: 'name email' 'message message';
+    grid-gap: 30px;
+}
+
+.name {
+    grid-area: name;
+    height: 50px;
+}
+
+.email {
+    grid-area: email;
+    height: 50px;
+}
+
+.message {
+    grid-area: message;
+    height: 175px;
+}
+
+input {
+    padding-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+textarea {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.form-btn {
+    width: 190px;
+    height: 55px;
+    margin-top: 50px;
 }
