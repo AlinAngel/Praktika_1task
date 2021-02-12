@@ -35,7 +35,7 @@ h3 {
     color: #FFFFFF;
 }
 
-/* Часть 1 */
+/* ----------- Part 1 ----------- */
 
 .container {
     width: 100%;
@@ -79,7 +79,8 @@ ul.menu-bar li:last-child {
 }
 
 .img-laptop {
-    width: 357px;
+    max-width: 357px;
+    width: 100%;
     height: 233.7px;
 }
 
@@ -90,11 +91,11 @@ ul.menu-bar li:last-child {
     justify-content: space-around;
 }
 
-.header-text {
+.header-info {
     margin-left: 143px;
 }
 
-.title_style {
+.header-info_title {
     margin-top: -42px;
     font-weight: 500;
     font-size: 48px;
@@ -102,7 +103,7 @@ ul.menu-bar li:last-child {
     color: #000000;
 }
 
-.text_style {
+.header-info_text {
     margin: 60px 0px;
     max-width: 540px;
     width: 100%;
@@ -138,14 +139,14 @@ ul.menu-bar li:last-child {
     background: #065090;
 }
 
-/* Часть 2. Обо мне*/
+/* ----------- Part 2. About me ----------- */
 
-.about_me {
+.about-me {
     margin: 119px 0px;
     text-align: -webkit-center;
 }
 
-.about_me_title {
+.about-me_title {
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
@@ -154,7 +155,7 @@ ul.menu-bar li:last-child {
     color: #000000;
 }
 
-.about_me_text {
+.about-me_text {
     max-width: 540px;
     width: 100%;
     font-weight: normal;
@@ -164,7 +165,7 @@ ul.menu-bar li:last-child {
     color: #727272;
 }
 
-/* Часть 3. Проекты */
+/* ----------- Part 3. Numbers ----------- */
 
 .numbers .container {
     width: 100%;
@@ -213,7 +214,7 @@ ul.menu-bar li:last-child {
     height: 50px;
 }
 
-/* Часть 4. Навыки */
+/* ----------- Part 4. Skills ----------- */
 
 .skills .container {
     display: flex;
@@ -224,26 +225,49 @@ ul.menu-bar li:last-child {
     margin-bottom: 102px;
 }
 
+.progressbar {
+    height: 4px;
+    max-width: 445px;
+    width: 100%;
+    position: relative;
+    background: #C4C4C4;
+}
+
+.progressbar>span {
+    display: block;
+    width: 78.9%;
+    height: 100%;
+    background-color: #34547A;
+    margin: 20px 0px 29px 0px;
+}
+
+.progressbar>span:last-child {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
 .skills-text {
+    max-width: 445px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: initial;
 }
 
-ul.skills-list {
+ul.skills-text_list {
     list-style: none;
     padding-inline-start: 0px;
     margin-top: 50px;
 }
 
-ul.skills-list li {
+ul.skills-text_list li {
     display: inherit;
     white-space: nowrap;
     margin-bottom: 30px;
     color: #727272;
 }
 
-ul.skills-list li:last-child {
+ul.skills-text_list li:last-child {
     margin: 0;
 }
 
@@ -257,24 +281,23 @@ ul.skills-list li:last-child {
     width: 100%;
 }
 
-/* Часть 5. Видео */
+/* ----------- Part 5. Video ----------- */
 
 .video .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 100px 0px;
 }
 
 .video {
     width: 100%;
     height: 100%;
     background: #EEEFF1;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
-.video-text {
+.video-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,12 +308,19 @@ ul.skills-list li:last-child {
     color: #727272;
 }
 
-.video-title {
+.video-info_title {
     margin-bottom: 50px;
+}
+
+.video-info_text {
+    max-width: 540px;
+    width: 100%;
 }
 
 .video-content {
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1110px;
 }
@@ -303,6 +333,8 @@ ul.skills-list li:last-child {
 
 .overlay-video {
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 0;
     bottom: 0;
     left: 0;
@@ -329,7 +361,7 @@ ul.skills-list li:last-child {
     text-align: center;
 }
 
-/* Часть 6. Проекты */
+/* ----------- Part 6. Projects ----------- */
 
 .projects {
     display: flex;
@@ -388,7 +420,7 @@ ul.skills-list li:last-child {
     text-align: center;
 }
 
-/* Часть 7. Форма */
+/* ----------- Part 7. Form ----------- */
 
 .form {
     padding: 119px 0px;
@@ -396,7 +428,7 @@ ul.skills-list li:last-child {
     background: #EEEFF1;
 }
 
-.form-title {
+.form-info_title {
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
@@ -405,7 +437,7 @@ ul.skills-list li:last-child {
     color: #000000;
 }
 
-.form-text {
+.form-info_text {
     max-width: 540px;
     width: 100%;
     font-weight: normal;
@@ -477,24 +509,20 @@ textarea:focus {
     margin-top: 50px;
 }
 
-/* Часть  8. Подвал сайта */
+/* ----------- Part 8. Footer ----------- */
 
 footer {
     width: 100%;
     height: 151px;
     background: #34547A;
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-around;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 
 .description {
     display: flex;
     flex-direction: column;
-    /* padding-top: 50px; */
-    /* align-items: flex-start; */
 }
 
 .copyright {
@@ -523,42 +551,65 @@ ul.social li:last-child {
     margin-right: 0px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
     header {
         padding-bottom: 95px;
     }
-    /* .container {
-        width: 50%;
-    } */
     .menu-bar {
         display: none;
     }
+    .navigation {
+        padding: 0px;
+    }
     .header-content {
-        margin: 67px 57px 57px 57px;
+        margin: 0px 26px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .header-text {
+    .header-info {
         text-align: center;
-        margin-top: 58px;
         margin-left: 0px;
     }
-    .text_style {
-        /* max-width: 322px; */
+    .header-info_title {
+        font-size: 36px;
+        margin-top: 51px;
+        line-height: 100%;
+    }
+    .header-info_text {
+        max-width: 322px;
         width: 100%;
         margin: 44px 0px;
+        line-height: 120%;
+    }
+    .img-logo {
+        margin: 22px 0px 67px 19px;
     }
     /* ------------------- */
+    .about-me_text {
+        max-width: 323px;
+    }
+    /* ------------------- */
+    .skills-padding {
+        width: auto;
+        display: flex;
+        align-items: center;
+        padding: 0 18px 0 18px;
+    }
     .skills .container {
         flex-direction: column-reverse;
         align-items: center;
+        margin-top: 82px;
     }
     .skills-text {
         margin-top: 98px;
+        max-width: 339px;
     }
-    .skills-title {
+    .skills-text_title {
         text-align: center;
+    }
+    .img-photo {
+        max-width: 339px;
     }
     /* ------------------- */
     .num_items {
@@ -568,12 +619,33 @@ ul.social li:last-child {
         width: 50%;
         margin-bottom: 89px;
     }
-    /* .num_item:last-child{
-        margin-bottom: 0px;
-    } */
     /* -------------------- */
-    .overlay-video{
+    .video-padding {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 18px;
+    }
+    .video .container {
+        padding-top: 93px;
+        padding-bottom: 91px;
+    }
+    .video-info_title {
+        margin-bottom: 34px;
+    }
+    .video-info_text {
+        max-width: 323px;
+    }
+    .img-video {
+        max-width: 339px;
+    }
+    .icon-video {
+        max-width: 75px;
+    }
+    .overlay-video {
         opacity: 1;
+        width: 100%;
     }
     /* -------------------- */
     .projects {
@@ -586,9 +658,30 @@ ul.social li:last-child {
     .project_content {
         width: 50%;
     }
+    .icon-project {
+        max-width: 75px;
+    }
     /* ------------------- */
+    .form {
+        padding: 100px 0px;
+    }
+    .form-padding {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 18px;
+    }
+    .form-info_title {
+        margin-bottom: 34px;
+    }
+    .form-info_text {
+        max-width: 322px;
+    }
     .contact-form {
         grid-template-areas: 'name name' 'email email' 'message message';
+        grid-gap: 21px;
+        margin-top: 48px;
     }
     /* ------------------- */
     footer {

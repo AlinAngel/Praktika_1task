@@ -2,10 +2,11 @@
 <html lang="ru" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Task 1</title>
-  <!-- <link rel="shortcut icon" href="https://atom.io/favicon.ico"/> -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Task1.Maket</title>
 </head>
 
 <body>
@@ -25,13 +26,10 @@
 
       <div class="header-content">
         <img class="img-laptop" src="img/laptop.svg">
-        <div class="header-text">
-          <!--Заголовок-->
-          <p class="title_style">Дизайн и верстка</p>
-          <!-- Текст -->
-          <p class="text_style">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        <div class="header-info">
+          <p class="header-info_title">Дизайн и верстка</p>
+          <p class="header-info_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
             Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-          <!-- Кнопка -->
           <button class="btn">Написать мне</button>
         </div>
       </div>
@@ -40,9 +38,9 @@
 
 
   <!-- Part 2. About me -->
-  <section class="about_me">
-    <h2 class="about_me_title">Обо мне</h2>
-    <p class="about_me_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+  <section class="about-me">
+    <h2 class="about-me_title">Обо мне</h2>
+    <p class="about-me_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
       Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
   </section>
 
@@ -93,57 +91,65 @@
             <p class="num-text">проектов</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- Part 4. Skills -->
   <section class="skills">
-    <div class="container">
-      <div class="skills-text">
-        <h2 class="skills-title">Мои навыки</h2>
-        <ul class="skills-list">
-          <li>
-            <p>Adode Photoshop</p>
-            <img class="img-skills" src="img/skill.svg">
-          </li>
-          <li>
-            <p>Adode Photoshop</p>
-            <img class="img-skills" src="img/skill.svg">
-          </li>
-          <li>
-            <p>Adode Photoshop</p>
-            <img class="img-skills" src="img/skill.svg">
-          </li>
-        </ul>
+    <div class="skills-padding">
+      <div class="container">
+        <div class="skills-text">
+          <h2 class="skills-text_title">Мои навыки</h2>
+          <ul class="skills-text_list">
+            <li>
+              <p>Adode Photoshop</p>
+              <div class="progressbar">
+                <span></span>
+              </div>
+            </li>
+            <li>
+              <p>Adode Photoshop</p>
+              <div class="progressbar">
+                <span></span>
+              </div>
+            </li>
+            <li>
+              <p>Adode Photoshop</p>
+              <div class="progressbar">
+                <span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img class="img-photo" src="img/photo.png">
       </div>
-      <img class="img-photo" src="img/photo.png">
     </div>
   </section>
 
 
   <!-- Part 5. Video -->
   <section class="video">
-    <div class="container">
-      <div class="video-text">
-        <h2 class="video-title">Как я работаю</h2>
-        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-      </div>
-      <div class="video-content">
-        <img class="img-video" src="img/video.png">
-        <div class="overlay-video">
-          <img class="icon-video" src="img/play-button.svg">
-          <!-- <i class="fa fa-user"></i> -->
+    <div class="video-padding">
+      <div class="container">
+        <div class="video-info">
+          <h2 class="video-info_title">Как я работаю</h2>
+          <p class="video-info_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        </div>
+        <div class="video-content">
+          <img class="img-video" src="img/video.png">
+          <div class="overlay-video">
+            <img class="icon-video" src="img/play-button.svg">
+          </div>
         </div>
       </div>
     </div>
   </section>
-  
+
 
   <!-- Part 6. Projects -->
-  <section class="projects"> 
+  <section class="projects">
     <div class="project-column">
       <div class="project-content">
         <img class="img-project" src="img/pht_project1.png">
@@ -204,19 +210,24 @@
 
   <!-- Part 7. Form -->
   <section class="form">
-    <h2 class="form-title">Хотите веб-сайт?</h2>
-    <p class="form-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-      Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
-    <form>
-      <div class="contact-form">
-        <input type="text" name="name" class="name" placeholder="Ваше имя">
-        <input type="text" name="email" class="email" placeholder="Ваш e-mail">
-        <textarea name="message" class="message" placeholder="Сообщение"></textarea>
+    <div class="form-padding">
+      <div class="form-info">
+        <h2 class="form-info_title">Хотите веб-сайт?</h2>
+        <p class="form-info_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
       </div>
-      <button type="submit" class="btn form-btn">Отправить</button>
-    </form>
+      <form>
+        <div class="contact-form">
+          <input type="text" name="name" class="name" placeholder="Ваше имя">
+          <input type="text" name="email" class="email" placeholder="Ваш e-mail">
+          <textarea name="message" class="message" placeholder="Сообщение"></textarea>
+        </div>
+        <button type="submit" class="btn form-btn">Отправить</button>
+      </form>
+    </div>
   </section>
 
+  <!-- Part 8. Footer -->
   <footer>
     <div class="description">
       <h3>Иванов Иван</h3>
