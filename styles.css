@@ -40,7 +40,7 @@ h3 {
 .container {
     width: 100%;
     height: 100%;
-    max-width: 1050px;
+    max-width: 1150px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -85,10 +85,11 @@ ul.menu-bar li:last-child {
 }
 
 .header-content {
-    margin-top: 157px;
+    margin-top: 140px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .header-info {
@@ -96,7 +97,6 @@ ul.menu-bar li:last-child {
 }
 
 .header-info_title {
-    margin-top: -42px;
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
@@ -142,8 +142,10 @@ ul.menu-bar li:last-child {
 /* ----------- Part 2. About me ----------- */
 
 .about-me {
-    margin: 119px 0px;
+    margin-top: 119px;
+    margin-bottom: 100px;
     text-align: -webkit-center;
+    text-align: -moz-center;
 }
 
 .about-me_title {
@@ -220,7 +222,6 @@ ul.menu-bar li:last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
     margin-top: 102px;
     margin-bottom: 102px;
 }
@@ -268,16 +269,11 @@ ul.skills-text_list li {
 }
 
 ul.skills-text_list li:last-child {
-    margin: 0;
-}
-
-.img-skills {
-    max-width: 480px;
-    width: 100%;
+    margin-bottom: 0;
 }
 
 .img-photo {
-    max-width: 525px;
+    max-width: 555px;
     width: 100%;
 }
 
@@ -327,6 +323,7 @@ ul.skills-text_list li:last-child {
 
 .img-video {
     display: block;
+    max-width: 1110px;
     width: 100%;
     height: auto;
 }
@@ -364,9 +361,6 @@ ul.skills-text_list li:last-child {
 /* ----------- Part 6. Projects ----------- */
 
 .projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin: 28px 0px;
     width: 100%;
     height: 100%;
@@ -374,15 +368,19 @@ ul.skills-text_list li:last-child {
     margin-right: auto;
 }
 
-.project-column {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-}
-
 .project-content {
     position: relative;
     width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project-item-5 {
+    order: 1;
 }
 
 .img-project {
@@ -425,6 +423,7 @@ ul.skills-text_list li:last-child {
 .form {
     padding: 119px 0px;
     text-align: -webkit-center;
+    text-align: -moz-center;
     background: #EEEFF1;
 }
 
@@ -512,9 +511,12 @@ textarea:focus {
 /* ----------- Part 8. Footer ----------- */
 
 footer {
+    background: #34547A;
+}
+
+footer .container {
     width: 100%;
     height: 151px;
-    background: #34547A;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -586,8 +588,18 @@ ul.social li:last-child {
         margin: 22px 0px 67px 19px;
     }
     /* ------------------- */
+    .about-me-padding {
+        padding: 0px 26px;
+    }
+    .about-me {
+        margin-top: 91px;
+        margin-bottom: 82px;
+    }
     .about-me_text {
         max-width: 323px;
+    }
+    .about-me_title {
+        margin-bottom: 42px;
     }
     /* ------------------- */
     .skills-padding {
@@ -614,10 +626,14 @@ ul.social li:last-child {
     /* ------------------- */
     .num_items {
         max-width: 600px;
+        padding: 75px 18px;
     }
     .num_item {
         width: 50%;
         margin-bottom: 89px;
+    }
+    .last-row-item {
+        margin-bottom: 0px;
     }
     /* -------------------- */
     .video-padding {
@@ -648,15 +664,21 @@ ul.social li:last-child {
         width: 100%;
     }
     /* -------------------- */
-    .projects {
-        flex-direction: column;
+    .grid-container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
-    .project-column {
-        flex-direction: row;
-        width: 100%;
+    #pr_item3 {
+        order: 1;
     }
-    .project_content {
-        width: 50%;
+    #pr_item4 {
+        order: 1;
+    }
+    #pr_item7 {
+        order: 2;
+    }
+    #pr_item8 {
+        order: 2;
     }
     .icon-project {
         max-width: 75px;
@@ -684,11 +706,12 @@ ul.social li:last-child {
         margin-top: 48px;
     }
     /* ------------------- */
-    footer {
+    footer .container{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        height: 210px;
+        width: auto;
+        padding: 50px;
     }
     ul.social {
         margin-top: 38px;

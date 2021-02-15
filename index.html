@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Task1.Maket</title>
 </head>
 
@@ -39,9 +41,13 @@
 
   <!-- Part 2. About me -->
   <section class="about-me">
-    <h2 class="about-me_title">Обо мне</h2>
-    <p class="about-me_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-      Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+    <div class="about-me-padding">
+      <div class="container">
+        <h2 class="about-me_title">Обо мне</h2>
+        <p class="about-me_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+      </div>
+    </div>
   </section>
 
 
@@ -77,14 +83,14 @@
             <p class="num-text">проектов</p>
           </div>
         </div>
-        <div class="num_item">
+        <div class="num_item last-row-item">
           <img class="img-num" src="img/project.png">
           <div class="num-txt-content">
             <h3>40+</h3>
             <p class="num-text">проектов</p>
           </div>
         </div>
-        <div class="num_item">
+        <div class="num_item last-row-item">
           <img class="img-num" src="img/project.png">
           <div class="num-txt-content">
             <h3>40+</h3>
@@ -150,56 +156,50 @@
 
   <!-- Part 6. Projects -->
   <section class="projects">
-    <div class="project-column">
-      <div class="project-content">
+    <div class="grid-container">
+      <div class="project-content" id="pr_item1">
         <img class="img-project" src="img/pht_project1.png">
         <div class="overlay-project">
           <img class="icon-project" src="img/eye.png">
         </div>
       </div>
-      <div class="project-content">
+      <div class="project-content" id="pr_item2">
         <img class="img-project" src="img/pht_project2.png">
         <div class="overlay-project">
           <img class="icon-project" src="img/eye.png">
         </div>
       </div>
-    </div>
-    <div class="project-column">
-      <div class="project-content">
-        <img class="img-project" src="img/pht_project2.png">
-        <div class="overlay-project">
-          <img class="icon-project" src="img/eye.png">
-        </div>
-      </div>
-      <div class="project-content">
+      <div class="project-content" id="pr_item3">
         <img class="img-project" src="img/pht_project1.png">
         <div class="overlay-project">
           <img class="icon-project" src="img/eye.png">
         </div>
       </div>
-    </div>
-    <div class="project-column">
-      <div class="project-content">
+      <div class="project-content" id="pr_item4">
+        <img class="img-project" src="img/pht_project2.png">
+        <div class="overlay-project">
+          <img class="icon-project" src="img/eye.png">
+        </div>
+      </div>
+      <div class="project-content" id="pr_item5">
+        <img class="img-project" src="img/pht_project2.png">
+        <div class="overlay-project">
+          <img class="icon-project" src="img/eye.png">
+        </div>
+      </div>
+      <div class="project-content" id="pr_item6">
         <img class="img-project" src="img/pht_project1.png">
         <div class="overlay-project">
           <img class="icon-project" src="img/eye.png">
         </div>
       </div>
-      <div class="project-content">
+      <div class="project-content" id="pr_item7">
         <img class="img-project" src="img/pht_project2.png">
         <div class="overlay-project">
           <img class="icon-project" src="img/eye.png">
         </div>
       </div>
-    </div>
-    <div class="project-column">
-      <div class="project-content">
-        <img class="img-project" src="img/pht_project2.png">
-        <div class="overlay-project">
-          <img class="icon-project" src="img/eye.png">
-        </div>
-      </div>
-      <div class="project-content">
+      <div class="project-content" id="pr_item8">
         <img class="img-project" src="img/pht_project1.png">
         <div class="overlay-project">
           <img class="icon-project" src="img/eye.png">
@@ -211,33 +211,37 @@
   <!-- Part 7. Form -->
   <section class="form">
     <div class="form-padding">
-      <div class="form-info">
-        <h2 class="form-info_title">Хотите веб-сайт?</h2>
-        <p class="form-info_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-          Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
-      </div>
-      <form>
-        <div class="contact-form">
-          <input type="text" name="name" class="name" placeholder="Ваше имя">
-          <input type="text" name="email" class="email" placeholder="Ваш e-mail">
-          <textarea name="message" class="message" placeholder="Сообщение"></textarea>
+      <div class="container">
+        <div class="form-info">
+          <h2 class="form-info_title">Хотите веб-сайт?</h2>
+          <p class="form-info_text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
         </div>
-        <button type="submit" class="btn form-btn">Отправить</button>
-      </form>
+        <form>
+          <div class="contact-form">
+            <input type="text" name="name" class="name" placeholder="Ваше имя">
+            <input type="text" name="email" class="email" placeholder="Ваш e-mail">
+            <textarea name="message" class="message" placeholder="Сообщение"></textarea>
+          </div>
+          <button type="submit" class="btn form-btn">Отправить</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- Part 8. Footer -->
   <footer>
-    <div class="description">
-      <h3>Иванов Иван</h3>
-      <p class="copyright">(с) 2018. Все права защищены.</p>
+    <div class="container">
+      <div class="description">
+        <h3>Иванов Иван</h3>
+        <p class="copyright">(с) 2018. Все права защищены.</p>
+      </div>
+      <ul class="social">
+        <li><img src="img/vk-social-network-logo.svg"></li>
+        <li><img src="img/vk-social-network-logo.svg"></li>
+        <li><img src="img/vk-social-network-logo.svg"></li>
+      </ul>
     </div>
-    <ul class="social">
-      <li><img src="img/vk-social-network-logo.svg"></li>
-      <li><img src="img/vk-social-network-logo.svg"></li>
-      <li><img src="img/vk-social-network-logo.svg"></li>
-    </ul>
   </footer>
 </body>
 
